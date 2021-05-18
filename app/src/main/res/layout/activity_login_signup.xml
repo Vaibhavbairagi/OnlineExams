@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/down_curve_bg"
+    tools:context=".LoginSignUpActivity">
+
+    <include
+        layout="@layout/login_ui"
+        android:visibility="gone" />
+
+    <include layout="@layout/signup_ui" />
+
+    <include
+        layout="@layout/ask_for_type_ui"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/take_student_info_ui"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/fullscreen_progress_light_bg"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

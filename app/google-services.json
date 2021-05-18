@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649491586015",
+    "project_id": "onlineexams-ec3d2",
+    "storage_bucket": "onlineexams-ec3d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649491586015:android:5dcced391f550ac1c5c26a",
+        "android_client_info": {
+          "package_name": "com.vaibhav.onlineexams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649491586015-tk1ehu9bsemm24lbeb4hkgng4vm4t6oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRantVzGRHv_6BYZsHcss6pGt2HpI2F8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649491586015-tk1ehu9bsemm24lbeb4hkgng4vm4t6oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

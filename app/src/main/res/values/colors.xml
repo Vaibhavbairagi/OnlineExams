@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#0D2E8F</color>
+    <color name="colorAccent">#0F3298</color>
+
+    <color name="textColorPrimary">#000000</color>
+    <color name="themeButtonColor">#2979FF</color>
+
+    <color name="homeBG">#EEF3F6</color>
+    <color name="iconsAndViewsBgColor">#0F3298</color>
+    <color name="grey">#747474</color>
+    <color name="light_grey">#BBBBBB</color>
+    <color name="transparent">#00000000</color>
+    <color name="skyBlue">#3E9DD7</color>
+
+    <color name="primary">#00d3d3</color>
+    <color name="secondary">#2541b2</color>
+    <color name="tertiary">#ffffff</color>
+    <color name="dept_icon">#1d83cf</color>
+
+    <color name="c1">#3673F3</color>
+    <color name="c2">#22E3B0</color>
+    <color name="d1">#416AF5</color>
+    <color name="d2">#DF37DC</color>
+    <color name="e1">#FFC52A</color>
+    <color name="e2">#FF991E</color>
+
+    <color name="slot_day_selected_bg_color">#EDFCF7</color>
+    <color name="slots_day_selected_outline_color">#94ECFA</color>
+    <color name="slots_day_unselected_outline_color">#B5B6BA</color>
+    <color name="slots_day_available_text_color">#45AC3F</color>
+    <color name="light_grey_1">#EFF0F4</color>
+    <color name="sky_blue_1">#12BEEE</color>
+
+    <color name="blue_1">#119af0</color>
+
+    <color name="black1">#2e2d33</color>
+    <color name="sky_blue_2">#119af0</color>
+
+</resources>

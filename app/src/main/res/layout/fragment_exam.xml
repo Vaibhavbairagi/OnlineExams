@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:padding="20dp"
+    tools:context=".fragments.ExamFragment">
+
+    <TextView
+        android:id="@+id/tv_fe_exam_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_fe_exam_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fe_exam_title"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_fe_exam_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fe_exam_start_time"
+        android:layout_marginTop="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_question_paper_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fe_exam_end_time"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_grey_1">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_cloud_download_24" />
+
+        <TextView
+            android:id="@+id/tv_question_paper_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/iv1"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fe_student_submission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_question_paper_pdf"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_answer_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_baseline_library_add_24" />
+
+            <TextView
+                android:id="@+id/tv_choose_answer_script"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toEndOf="@id/iv2"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:maxLines="1"
+                android:text="@string/add_answer_script"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_submission_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_choose_answer_sheet"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_fe_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rc_dark_blue_bg"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_submission_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_question_paper_pdf"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_fe_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submissions : "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_submissions_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_fe_1"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/fullscreen_progress_light_bg"
+        android:visibility="gone" />
+</RelativeLayout>
